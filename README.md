@@ -77,7 +77,7 @@ I recommend putting a switch in the DDI-1 such that the mod can be turn on and o
 
 Simple. Each drive has a Drive Select 0 (DS0) and Drive Select 1 (DS1)
 input. By default, DS0 is used for the A connector of the DDI-1, and
-DS1 for its B connector. Moreover, DS1 is not connectod for A, and DS0
+DS1 for its B connector. Moreover, DS1 is not connected for A, and DS0
 is not connected for B in the DDI-1 floppy cable. The purpose of the
 two I1, I2 sockets is to recover both DS0, DS1 signals. In addition,
 each individual disk drive is also jumpered (or configured) to either
@@ -88,11 +88,10 @@ Hence, for each of the three connected drives, the DIP switch allows
 to select the following signal routes: A -> DS0, B -> DS0, A -> DS1,
 and B -> DS1. A drive which is jumpered to respond to DS1 can be made
 to act as an A drive via A -> DS1; vice versa, a drive that is
-configured for DS0 can be made to react to B (B -> DF0). And the
-routing can be determined for 2 of the 3 connected drives
-individually. To disable a drive, make sure ALL off the DIP selection
-switches for the drive are in OFF position (and hence, it does not
-respond to either A or B).
+configured for DS0 can be made to react to B: B -> DS0. The routing
+can be determined for 2 of the 3 connected drives individually. To
+disable a drive, make sure all DIP switches for the correpsonding
+drive are in OFF position (it will then neither respond to A nor B).
 
 ## PCB Production
 
